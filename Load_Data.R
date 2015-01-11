@@ -2,7 +2,7 @@
 # Save it to an .rds file for easy access later.
 if (!file.exists('saved_data.rds')) {
     # download if input data file does not exists
-    if (!file.exists("data.zip")) {
+    if (!file.exists("data/data.zip")) {
       download.file(url="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",
                     destfile="data.zip")
       unzip("data.zip")  # unzip
